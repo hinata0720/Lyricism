@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .container {
+            width: 200%;
+            max-width: 200%;
+            margin: 0 auto; /* Optional: To center the container if there's padding */
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100">
+
+        <header class="bg-white dark:bg-zinc-800 shadow">
+            <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+                <div class="text-sm">日本語の歌詞から歴史的背景や文化的変遷を読み取るサイト</div>
+                <nav class="space-x-4">
+                    <a href="#" class="hover:underline">時代別ページ</a>
+                    <a href="#" class="hover:underline">トピック別ページ</a>
+                    <a href="#" class="hover:underline">サイト情報</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container mx-auto px-4 py-8">
+
+            <div class="flex justify-center mb-8">
+                <img src="images/main.jpg" alt="Lyricism Logo" class="max-w-full h-auto">
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+
+                <aside class="bg-white dark:bg-zinc-800 p-4 shadow-md">
+                    <ul class="space-y-2">
+                        <li><a href="#" class="block hover:underline">時代別ページ</a></li>
+                        <li><a href="#" class="block hover:underline">トピック別ページ</a></li>
+                        <li><a href="#" class="block hover:underline">サイト情報</a></li>
+                    </ul>
+                </aside>
+
+                <section class="md:col-span-3">
+
+                    <div class="mb-8">
+                        <h2 class="text-xl font-bold mb-4">時代別ページ</h2>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                            <div class="text-center">
+                                <img src="https://placehold.co/100x100" alt="1980" class="mx-auto mb-2">
+                                <div>1980</div>
+                            </div>
+                            <div class="text-center">
+                                <img src="https://placehold.co/100x100" alt="1990" class="mx-auto mb-2">
+                                <div>1990</div>
+                            </div>
+                            <div class="text-center">
+                                <img src="https://placehold.co/100x100" alt="2000" class="mx-auto mb-2">
+                                <div>2000</div>
+                            </div>
+                            <div class="text-center">
+                                <img src="https://placehold.co/100x100" alt="2010" class="mx-auto mb-2">
+                                <div>2010</div>
+                            </div>
+                            <div class="text-center">
+                                <img src="https://placehold.co/100x100" alt="2020" class="mx-auto mb-2">
+                                <div>2020</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-4">トピック別ページ</h2>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                            <div class="text-center">
+                                <img src="https://placehold.co/100x100" alt="社会・経済" class="mx-auto mb-2">
+                                <div>社会・経済</div>
+                            </div>
+                            <div class="text-center">
+                                <img src="https://placehold.co/100x100" alt="政治" class="mx-auto mb-2">
+                                <div>政治</div>
+                            </div>
+                            <div class="text-center">
+                                <img src="https://placehold.co/100x100" alt="文化・流行" class="mx-auto mb-2">
+                                <div>文化・流行</div>
+                            </div>
+                            <div class="text-center">
+                                <img src="https://placehold.co/100x100" alt="テクノロジー" class="mx-auto mb-2">
+                                <div>テクノロジー</div>
+                            </div>
+                            <div class="text-center">
+                                <img src="https://placehold.co/100x100" alt="災害・出来事" class="mx-auto mb-2">
+                                <div>災害・出来事</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="bg-white dark:bg-zinc-800 py-4">
+            <div class="container mx-auto px-4 flex justify-between">
+                <div>Lyricism</div>
+                <div class="space-x-4">
+                    <a href="#" class="hover:underline">トピック別ページ</a>
+                    <a href="#" class="hover:underline">サイト情報</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
