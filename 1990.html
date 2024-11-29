@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1990's - Lyricism</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="era.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="サイトロゴ">
+                </a>
+            </div>
+            <button class="hamburger-menu" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" id="top-link">TOP</a></li>
+                    <li><a href="analyze.html" id="analyze-link">ANALYZE</a></li>
+                    <li><a href="1980.html" id="1980-link">1980</a></li>
+                    <li><a href="1990.html" id="1990-link">1990</a></li>
+                    <li><a href="2000.html" id="2000-link">2000</a></li>
+                    <li><a href="2010.html" id="2010-link">2010</a></li>
+                    <li><a href="2020.html" id="2020-link">2020</a></li>
+                    <li><a href="about.html" id="about-link">ABOUT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="year-analysis">
+            <section class="top-section">
+                <h1>1990年代の分析</h1>
+                <p class="year-description">経済低迷と社会変革が交錯した「失われた10年」と、テクノロジーと文化が大きく進化した時代</p>
+                <div class="keyword-cloud">
+                    <img src="images/1990年代_wordcloud.jpg" alt="1980年代のキーワードクラウド" class="keyword-cloud-image">
+                </div>
+                <p class="keyword-explanation">単語の色は品詞の種類で異なっており、青色が名詞、赤色が動詞、緑色が形容詞、灰色が感動詞を表しています。</p>
+                <div class="genre-buttons">
+                    <button class="genre-btn" data-genre="society-economy">社会・経済</button>
+                    <button class="genre-btn" data-genre="politics">政治</button>
+                    <button class="genre-btn" data-genre="culture-trend">文化・流行</button>
+                    <button class="genre-btn" data-genre="technology">テクノロジー</button>
+                    <button class="genre-btn" data-genre="disasters-events">災害・出来事</button>
+                </div>
+            </section>
+
+            <section id="genre-info" class="genre-info">
+                <!-- ジャンル情報がここに動的に挿入されます -->
+            </section>
+
+            <section id="analysis-summary" class="analysis-summary">
+                <h2>分析結果</h2>
+                <div class="analysis-content">
+                    <div class="emotion-analysis">
+                        <h3>感情のレーダーチャート</h3>
+                        <img src="images/1990年代_emotionSummary.png" alt="1980年代の感情レーダーチャート" class="analysis-image">
+                        <p>日本がバブル経済崩壊を経験した後、経済の不安定さや社会の停滞が続き、人々の生活には多くの苦しみや不安が影を落としました。このような状況の中で、未来に対する悲観的な考え方が広がっていったのです。この影響は音楽や歌詞にも表れ、「悲しみ」や「切なさ」といった感情がより多く反映されるようになりました。</p>
+                    </div>
+                    <div class="sentiment-analysis">
+                        <h3>センチメント分析</h3>
+                        <img src="images/1990年代_posinega_summary.png" alt="1980年代のセンチメント分析" class="analysis-image">
+                        <p>1990年代の歌詞には、ポジティブな要素も少し含まれているものの、全体としてはネガティブな感情や中立的な感情が多くを占めていることがわかります。この時代の音楽には感情の多様性が表れており、各曲には喜びや「好き」といった明るい感情だけでなく、悲しみや恐れといった深い感情も込められています。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bottom-section">
+                <h2>総括と影響</h2>
+                <p>1990年代の楽曲も引き続き「愛」や「人との関わり」が大きなテーマであったことがわかります。特に「抱きしめる」、「君」、「あなた」といった言葉が頻繁に登場していることから、個人的で感情的なつながりが重視されていた様子がうかがえます。また、「夢」や「忘れる」というキーワードからは、未来への希望や過去への思い、失恋や喪失感といったテーマも重要視されていたことがわかります。 さらに、「信じる」、「二人」といった言葉が強調されていることから、信頼や絆、未来への期待が強く歌われていたことも特徴的です。全体的に、愛や切なさ、儚さといった感情が深く描かれている一方で、希望や未来に向かう強さも見られる時代です。このデータから、1990年代の音楽はバランスの取れた感情表現がされていたことがわかります。1980年代よりもわずかにポジティブな感情が増えている一方で、ネガティブな感情も依然として楽曲の大きな部分を占めていました。</p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lyricism. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="1990.js"></script>
+</body>
+</html>

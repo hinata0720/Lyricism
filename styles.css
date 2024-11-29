@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding-top: 100px; /* 80pxから100pxに増やす */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #9f9f9f;
+}
+
+.word-cloud-slider {
+    max-width: 1200px;
+    margin: 40px auto 40px; /* 上部のマージンを40pxに増やす */
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.slide img {
+    max-width: 100%;
+    min-height: 400px; /* 最小高さを追加 */
+    height: auto;
+    object-fit: cover; /* 画像がコンテナを埋めるように設定 */
+    transition: opacity 0.3s ease;
+}
+
+.slide:hover img {
+    opacity: 0.4;
+}
+
+.slide-text {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.slider-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-arrow-left {
+    left: 10px;
+}
+
+.slider-arrow-right {
+    right: 10px;
+}
+
+.site-introduction {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.site-points {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.point {
+    flex-basis: 30%;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.year-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.year-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.year-btn:hover {
+    background-color: #919191;
+}
+
+.cta-container {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover,
+  .cta-button:focus {
+    background-color: #a2a2a2;
+  }
+  
+  #analysis-results {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 120px; /* ヘッダーの高さに合わせて調整 */
+    }
+
+    header {
+        height: auto;
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .site-points {
+        flex-direction: column;
+    }
+
+    .point {
+        flex-basis: 100%;
+    }
+
+    .year-navigation {
+        flex-direction: column;
+    }
+
+    .year-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .slider-arrow {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+
+    .slide img {
+        min-height: 300px; /* モバイルでの最小高さを調整 */
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+    }
+
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        background-color: #fff;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+        padding-top: 80px;
+    }
+
+    .nav-menu.open {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2010's - Lyricism</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="era.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="サイトロゴ">
+                </a>
+            </div>
+            <button class="hamburger-menu" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" id="top-link">TOP</a></li>
+                    <li><a href="analyze.html" id="analyze-link">ANALYZE</a></li>
+                    <li><a href="1980.html" id="1980-link">1980</a></li>
+                    <li><a href="1990.html" id="1990-link">1990</a></li>
+                    <li><a href="2000.html" id="2000-link">2000</a></li>
+                    <li><a href="2010.html" id="2010-link">2010</a></li>
+                    <li><a href="2020.html" id="2020-link">2020</a></li>
+                    <li><a href="about.html" id="about-link">ABOUT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="year-analysis">
+            <section class="top-section">
+                <h1>2010年代の分析</h1>
+                <p class="year-description">SNSの普及と情報のデジタル化が人々のコミュニケーションや価値観を変えた「ネット社会の深化した時代」</p>
+                <div class="keyword-cloud">
+                    <img src="images/2010's_wordcloud.jpg" alt="1980年代のキーワードクラウド" class="keyword-cloud-image">
+                </div>
+                <p class="keyword-explanation">単語の色は品詞の種類で異なっており、青色が名詞、赤色が動詞、緑色が形容詞、灰色が感動詞を表しています。</p>
+                <div class="genre-buttons">
+                    <button class="genre-btn" data-genre="society-economy">社会・経済</button>
+                    <button class="genre-btn" data-genre="politics">政治</button>
+                    <button class="genre-btn" data-genre="culture-trend">文化・流行</button>
+                    <button class="genre-btn" data-genre="technology">テクノロジー</button>
+                    <button class="genre-btn" data-genre="disasters-events">災害・出来事</button>
+                </div>
+            </section>
+
+            <section id="genre-info" class="genre-info">
+                <!-- ジャンル情報がここに動的に挿入されます -->
+            </section>
+
+            <section id="analysis-summary" class="analysis-summary">
+                <h2>分析結果</h2>
+                <div class="analysis-content">
+                    <div class="emotion-analysis">
+                        <h3>感情のレーダーチャート</h3>
+                        <img src="images/2010's_emotionSummary.jpeg" alt="1980年代の感情レーダーチャート" class="analysis-image">
+                        <p>2010年代の音楽は、「怒り」という感情をしっかりと反映しており、社会や政治に対する不満を表現する手段として重要な役割を果たしていました。音楽は単なるエンターテインメントではなく、時代の声を伝える力を持っていると言えます。アーティストたちは、自らの楽曲を通じて、社会の問題や不正に対する怒りを訴えかけ、リスナーに共感を呼び起こしていました。</p>
+                    </div>
+                    <div class="sentiment-analysis">
+                        <h3>センチメント分析</h3>
+                        <img src="images/2010's_posinega_summary.jpeg" alt="1980年代のセンチメント分析" class="analysis-image">
+                        <p>全体としてポジティブな感情を表現した曲は少数派で、ネガティブな感情を含む曲が比較的多いことが見受けられます。また、約半数の楽曲が中立的な感情を表現しており、単純に明るいか暗いかという二元的な感情表現ではなく、微妙な感情や複雑な内面が描かれていることが特徴です。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bottom-section">
+                <h2>総括と影響</h2>
+                <p>2010年代の音楽は、愛や夢、希望といった明るいテーマを多く扱いながらも、孤独や別れといった切ない感情も描いています。特に、キーワードクラウドに浮かび上がる「君」「僕」「愛」「夢」といった言葉から、個人のつながりや希望が多くの楽曲で大事にされていることがわかります。同時に、「消える」「泣く」「悲しい」といったネガティブな言葉も散見され、現代社会の複雑な感情を反映していることがうかがえます。2010年代の音楽は、ポジティブなメッセージだけではなく、失恋や別れ、葛藤といった感情にも焦点を当てることで、よりリアルで多面的な感情を表現しているのが特徴です。愛や喜び、つながりといった希望を描きながらも、孤独や悲しみといった繊細な感情にもフォーカスが当てられており、リスナーに深い共感を生む力を持った楽曲が多い時代だったと言えるでしょう。</p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lyricism. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="2010.js"></script>
+</body>
+</html>

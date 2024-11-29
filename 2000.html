@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2000's - Lyricism</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="era.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="サイトロゴ">
+                </a>
+            </div>
+            <button class="hamburger-menu" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" id="top-link">TOP</a></li>
+                    <li><a href="analyze.html" id="analyze-link">ANALYZE</a></li>
+                    <li><a href="1980.html" id="1980-link">1980</a></li>
+                    <li><a href="1990.html" id="1990-link">1990</a></li>
+                    <li><a href="2000.html" id="2000-link">2000</a></li>
+                    <li><a href="2010.html" id="2010-link">2010</a></li>
+                    <li><a href="2020.html" id="2020-link">2020</a></li>
+                    <li><a href="about.html" id="about-link">ABOUT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="year-analysis">
+            <section class="top-section">
+                <h1>2000年代の分析</h1>
+                <p class="year-description">テクノロジーの急速な進化と国際化が進む中で、経済と社会の多様性が拡大した「変革の時代」</p>
+                <div class="keyword-cloud">
+                    <img src="images/2000_wordcloud.jpg" alt="1980年代のキーワードクラウド" class="keyword-cloud-image">
+                </div>
+                <p class="keyword-explanation">単語の色は品詞の種類で異なっており、青色が名詞、赤色が動詞、緑色が形容詞、灰色が感動詞を表しています。</p>
+                <div class="genre-buttons">
+                    <button class="genre-btn" data-genre="society-economy">社会・経済</button>
+                    <button class="genre-btn" data-genre="politics">政治</button>
+                    <button class="genre-btn" data-genre="culture-trend">文化・流行</button>
+                    <button class="genre-btn" data-genre="technology">テクノロジー</button>
+                    <button class="genre-btn" data-genre="disasters-events">災害・出来事</button>
+                </div>
+            </section>
+
+            <section id="genre-info" class="genre-info">
+                <!-- ジャンル情報がここに動的に挿入されます -->
+            </section>
+
+            <section id="analysis-summary" class="analysis-summary">
+                <h2>分析結果</h2>
+                <div class="analysis-content">
+                    <div class="emotion-analysis">
+                        <h3>感情のレーダーチャート</h3>
+                        <img src="images/2000_emotionSummary.png" alt="1980年代の感情レーダーチャート" class="analysis-image">
+                        <p>2000年代の歌詞は、個人の感情や内面、複雑な人間関係に焦点を当てたものが多く見られました。特に失恋や別れ、孤独といったテーマが繰り返し扱われており、感情的な葛藤や苦しみが歌詞に反映されていました。これらのテーマは、音楽を通じてリスナーが自分自身の感情や経験と向き合う手段として機能していた可能性があります。</p>
+                    </div>
+                    <div class="sentiment-analysis">
+                        <h3>センチメント分析</h3>
+                        <img src="images/2000_posinega_summary.png" alt="1980年代のセンチメント分析" class="analysis-image">
+                        <p>全体的にはポジティブな歌詞が多く、特に「愛」や「夢」、「未来」などの前向きなキーワードが多用されていました。しかし、ポジティブ一辺倒ではなく、「別れ」や「涙」、「後悔」といったネガティブな感情表現も無視できない存在感を示しており、現実の苦しみや葛藤が歌詞に反映されていることがわかります。このバランスが、当時のリスナーにとってリアルで心に響くものだったのでしょう。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bottom-section">
+                <h2>総括と影響</h2>
+                <p>2000年代のヒット曲は、ただ明るい希望や夢を歌うだけでなく、現実の辛さや痛みをリアルに描いている点が特徴的です。多くの曲が、希望と共に苦しみや悩みも伝えることで、リスナーに深い共感を与えていました。そうした楽曲は、人々が抱える不安や心の痛みに寄り添い、励ましや癒しを提供する役割を果たしていたのではないでしょうか。現実を直視しながらも、前向きに生きようとするメッセージが、多くの人々の心に響いた時代だったのだと思います。この時代はインターネットの普及やグローバライゼーションが進んだことで、個々の感情や経験が多様に表現されるようになりました。社会の変化や個人の内面的な葛藤が歌詞に色濃く反映されているのが特徴です。
+                    特に2000年代の音楽は、聴く人たちに強い共感を呼び起こし、感情的なつながりを生む力を持っています。恋愛や人間関係の複雑さを描くことで、より深いメッセージが込められた作品も多く、これがこの時代の音楽の魅力の一つと言えるでしょう。</p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lyricism. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="2000.js"></script>
+    
+</body>
+</html>

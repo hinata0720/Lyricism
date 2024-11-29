@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyricism</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="サイトロゴ">
+            </a>
+        </div>
+        <button class="hamburger-menu" aria-label="メニュー">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html" id="top-link">TOP</a></li>
+                <li><a href="analyze.html" id="analyze-link">ANALYZE</a></li>
+                    <li><a href="1980.html" id="1980-link">1980</a></li>
+                    <li><a href="1990.html" id="1990-link">1990</a></li>
+                    <li><a href="2000.html" id="2000-link">2000</a></li>
+                    <li><a href="2010.html" id="2010-link">2010</a></li>
+                    <li><a href="2020.html" id="2020-link">2020</a></li>
+                    <li><a href="about.html" id="about-link">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="word-cloud-slider">
+            <button class="slider-arrow slider-arrow-left" aria-label="前の年代へ">&lt;</button>
+            <div class="slider-container">
+                <div class="slide" data-year="1980">
+                    <h2>1980年代</h2>
+                    <img src="images/1980wordcloud.jpg" alt="1980年代のワードクラウド">
+                </div>
+                <div class="slide" data-year="1990">
+                    <h2>1990年代</h2>
+                    <img src="images/1990年代_wordcloud.jpg" alt="1990年代のワードクラウド">
+                </div>
+                <div class="slide" data-year="2000">
+                    <h2>2000年代</h2>
+                    <img src="images/2000_wordcloud.jpg" alt="2000年代のワードクラウド">
+                </div>
+                <div class="slide" data-year="2010">
+                    <h2>2010年代</h2>
+                    <img src="images/2010's_wordcloud.jpg" alt="2010年代のワードクラウド">
+                </div>
+                <div class="slide" data-year="2020">
+                    <h2>2020年代</h2>
+                    <img src="images/2020's_wordcloud.jpg" alt="2020年代のワードクラウド">
+                </div>
+            </div>
+            <button class="slider-arrow slider-arrow-right" aria-label="次の年代へ">&gt;</button>
+        </section>
+
+        <section class="site-introduction">
+            <h1>日本語の歌詞から歴史的背景や文化的変遷を読み取るサイト</h1>
+            <p>日本の歌詞の変遷をデータで紐解く。1980年代から2020年代までの流行や社会背景を歌詞から探る分析サイトです。</p>
+        </section>
+
+        <section class="site-points">
+            <div class="point">
+                <h3>時代ごとのデータ</h3>
+                <p>各年代の特徴的な単語や表現を可視化</p>
+            </div>
+            <div class="point">
+                <h3>視覚的に楽しい分析結果</h3>
+                <p>グラフやチャートで傾向を分かりやすく表示</p>
+            </div>
+            <div class="point">
+                <h3>社会背景との関連性を考察</h3>
+                <p>歌詞の変化と時代の出来事を結びつけて解説</p>
+            </div>
+        </section>
+
+        <div class="cta-container">
+            <a href="analyze.html" class="cta-button" role="button" aria-label="分析結果を見る">
+                分析結果はこちら
+            </a>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Lyricism. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

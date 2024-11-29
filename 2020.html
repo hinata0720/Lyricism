@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020's - Lyricism</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="era.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="サイトロゴ">
+                </a>
+            </div>
+            <button class="hamburger-menu" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" id="top-link">TOP</a></li>
+                    <li><a href="analyze.html" id="analyze-link">ANALYZE</a></li>
+                    <li><a href="1980.html" id="1980-link">1980</a></li>
+                    <li><a href="1990.html" id="1990-link">1990</a></li>
+                    <li><a href="2000.html" id="2000-link">2000</a></li>
+                    <li><a href="2010.html" id="2010-link">2010</a></li>
+                    <li><a href="2020.html" id="2020-link">2020</a></li>
+                    <li><a href="about.html" id="about-link">ABOUT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="year-analysis">
+            <section class="top-section">
+                <h1>2020年代の分析</h1>
+                <p class="year-description">パンデミックや気候変動への対応が求められ、持続可能性とデジタル化が重要視される「変革と挑戦の時代」</p>
+                <div class="keyword-cloud">
+                    <img src="images/2020's_wordcloud.jpg" alt="2020年代のキーワードクラウド" class="keyword-cloud-image">
+                </div>
+                <p class="keyword-explanation">単語の色は品詞の種類で異なっており、青色が名詞、赤色が動詞、緑色が形容詞、灰色が感動詞を表しています。</p>
+                <div class="genre-buttons">
+                    <button class="genre-btn" data-genre="society-economy">社会・経済</button>
+                    <button class="genre-btn" data-genre="politics">政治</button>
+                    <button class="genre-btn" data-genre="culture-trend">文化・流行</button>
+                    <button class="genre-btn" data-genre="technology">テクノロジー</button>
+                    <button class="genre-btn" data-genre="disasters-events">災害・出来事</button>
+                </div>
+            </section>
+
+            <section id="genre-info" class="genre-info">
+                <!-- ジャンル情報がここに動的に挿入されます -->
+            </section>
+
+            <section id="analysis-summary" class="analysis-summary">
+                <h2>分析結果</h2>
+                <div class="analysis-content">
+                    <div class="emotion-analysis">
+                        <h3>感情のレーダーチャート</h3>
+                        <img src="images/2020's_emotionSummary.jpeg" alt="1980年代の感情レーダーチャート" class="analysis-image">
+                        <p>コロナ禍という厳しい社会状況や、SNS時代の若者たちが抱える複雑な心情が反映され、「怒り」や「恐れ」といった感情が特に目立ちます。これらは攻撃的な怒りや単純な恐怖というよりも、将来への不安や、社会や人間関係に対する葛藤として表現されていることが多いです。</p>
+                    </div>
+                    <div class="sentiment-analysis">
+                        <h3>センチメント分析</h3>
+                        <img src="images/2020's_posinega_summary.jpeg" alt="1980年代のセンチメント分析" class="analysis-image">
+                        <p>直接的な感情表現を避け、状況や情景を通じて心情を描写しようとする現代的なアプローチを示しているため、全体の52.4%を占める中立的な表現の多さが目立ちます。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bottom-section">
+                <h2>総括と影響</h2>
+                <p>2020年代は、「君」という言葉を中心に、人間関係が描かれていることが分かります。「孤独」「切ない」「冷めやすい」といったネガティブな言葉が見られる一方で、「愛」「やさしい」「信じる」といったポジティブな言葉も多く存在し、現代の若者たちが抱える複雑で矛盾した感情が反映されていることがわかります。さらに、「変わる」「始まる」「終わる」といった変化や移り変わりを表す言葉が多く登場し、不確実な時代における変化への意識が高まっていることも見受けられます。このデータから、感情をストレートに表現するのではなく、より洗練された描写を通じて現代の感情を繊細に描く傾向が強いように思います。特に、デジタル社会を生きる若者たちの心理や、不確実な社会の中での心の揺れ動きが、深みを持って表現されている点が印象的です。</p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lyricism. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="2020.js"></script>
+</body>
+</html>

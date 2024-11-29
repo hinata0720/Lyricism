@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1980's - Lyricism</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="era.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="サイトロゴ">
+                    </a>
+            </div>
+            <button class="hamburger-menu" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" id="top-link">TOP</a></li>
+                    <li><a href="analyze.html" id="analyze-link">ANALYZE</a></li>
+                    <li><a href="1980.html" id="1980-link">1980</a></li>
+                    <li><a href="1990.html" id="1990-link">1990</a></li>
+                    <li><a href="2000.html" id="2000-link">2000</a></li>
+                    <li><a href="2010.html" id="2010-link">2010</a></li>
+                    <li><a href="2020.html" id="2020-link">2020</a></li>
+                    <li><a href="about.html" id="about-link">ABOUT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="year-analysis">
+            <section class="top-section">
+                <h1>1980年代の分析</h1>
+                <p class="year-description">バブル経済の絶頂期、日本の経済と文化が世界に影響を与えた時代</p>
+                <div class="keyword-cloud">
+                    <img src="images/1980wordcloud.jpg" alt="1980年代のキーワードクラウド" class="keyword-cloud-image">
+                </div>
+                <p class="keyword-explanation">単語の色は品詞の種類で異なっており、青色が名詞、赤色が動詞、緑色が形容詞、灰色が感動詞を表しています。</p>
+                <div class="genre-buttons">
+                    <button class="genre-btn" data-genre="society-economy">社会・経済</button>
+                    <button class="genre-btn" data-genre="politics">政治</button>
+                    <button class="genre-btn" data-genre="culture-trend">文化・流行</button>
+                    <button class="genre-btn" data-genre="technology">テクノロジー</button>
+                    <button class="genre-btn" data-genre="disasters-events">災害・出来事</button>
+                </div>
+            </section>
+
+            <section id="genre-info" class="genre-info">
+                <!-- ジャンル情報がここに動的に挿入されます -->
+            </section>
+
+            <section id="analysis-summary" class="analysis-summary">
+                <h2>分析結果</h2>
+                <div class="analysis-content">
+                    <div class="emotion-analysis">
+                        <h3>感情のレーダーチャート</h3>
+                        <img src="images/1980emotion.png" alt="1980年代の感情レーダーチャート" class="analysis-image">
+                        <p>多くの歌詞は、個人の感情や人間関係の葛藤を描いています。特に愛や別れのテーマでは、感情の高まりや怒りがよく表現されているため、「怒り」のグラフが高く現れています。</p>
+                    </div>
+                    <div class="sentiment-analysis">
+                        <h3>センチメント分析</h3>
+                        <img src="images/1980posinega.png" alt="1980年代のセンチメント分析" class="analysis-image">
+                        <p>特に「悲しみ」や「愛」に関する曲が多く、ポジティブな感情は比較的少ないことが目立ちます。その分、ネガティブや中立的な感情が強く表現されていて、聴く人々に深い共感を与える作品が多かったように思います。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bottom-section">
+                <h2>総括と影響</h2>
+                <p>1980年代の楽曲は愛や感情的なつながりを中心にしていたことが読み取れます。「抱きしめる」や「愛」、「あなた」といった言葉は、人との深い絆や親密さがテーマであったことを示しています。一方で、「切ない」や「涙」といった言葉からは、恋愛に伴う痛みや悲しみが多く描かれていたことが伺えます。「夢」や「忘れる」などの言葉は、過去や失ったものへの思いを感じさせ、ノスタルジックな雰囲気を醸し出しています。このデータから、1980年代の音楽は感情豊かでありながら、特にネガティブや中立的なトーンが多かったことが分かります。恋愛の切なさや喪失感が中心的に描かれた一方で、内省的で落ち着いたテーマが多く取り上げられていた時代だったことがわかります。</p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lyricism. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="1980.js"></script>
+</body>
+</html>

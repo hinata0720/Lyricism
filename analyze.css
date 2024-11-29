@@ -1,0 +1,139 @@
+/* Analyze Page Specific Styles */
+
+.analyze-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1.analyze-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000000;
+    font-size: 2.5em;
+}
+
+.analyze-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.analyze-section h2 {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.chart-container {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.graph-instruction {
+    text-align: center;
+    font-style: bold;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+#heatmap {
+    width: 100%;
+    height: 500px;
+}
+
+.topics-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.topics-table th,
+.topics-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.topics-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #000000;
+}
+
+.topics-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.topics-table tr:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+.story-content,
+.timeline-content {
+    line-height: 1.8;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.timeline-content {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+    width: 2px;
+    background-color: #000000;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+@media (max-width: 768px) {
+    .analyze-section {
+        padding: 15px;
+    }
+
+    .chart-container {
+        height: 400px;
+    }
+
+    .topics-table {
+        font-size: 14px;
+    }
+
+    .topics-table th,
+    .topics-table td {
+        padding: 8px;
+    }
+
+    .story-content,
+    .timeline-content {
+        font-size: 1em;
+    }
+}

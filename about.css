@@ -1,0 +1,82 @@
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.site-description,
+.references-section,
+.profile {
+    margin-bottom: 60px;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.references-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.references-section li {
+    margin-bottom: 10px;
+}
+
+.references-section a {
+    color: #516485;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.references-section a:hover {
+    color: #767676;
+    text-decoration: underline;
+}
+
+.profile-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        margin-bottom: 20px;
+    }
+
+    .profile-text {
+        text-align: center;
+    }
+}

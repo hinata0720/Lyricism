@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歌詞分析 - Analyze</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="analyze.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="サイトロゴ">
+            </a>
+        </div>
+        <button class="hamburger-menu" aria-label="メニュー">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html" id="top-link">TOP</a></li>
+                <li><a href="analyze.html" id="analyze-link">ANALYZE</a></li>
+                    <li><a href="1980.html" id="1980-link">1980</a></li>
+                    <li><a href="1990.html" id="1990-link">1990</a></li>
+                    <li><a href="2000.html" id="2000-link">2000</a></li>
+                    <li><a href="2010.html" id="2010-link">2010</a></li>
+                    <li><a href="2020.html" id="2020-link">2020</a></li>
+                    <li><a href="about.html" id="about-link">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="analyze-container">
+        <h1 class="analyze-title">歌詞の時代分析</h1>
+
+        <section id="emotion-trend" class="analyze-section">
+            <h2>感情分析のトレンド</h2>
+            <p class="graph-instruction">グラフの項目をクリックすると、その項目の表示/非表示を切り替えられます。</p>
+            <div class="chart-container">
+                <canvas id="emotionChart"></canvas>
+            </div>
+        </section>
+
+        <section id="theme-comparison" class="analyze-section">
+            <h2>テーマごとの割合変化</h2>
+            <p class="graph-instruction">グラフの項目をクリックすると、その項目の表示/非表示を切り替えられます。</p>
+            <div class="chart-container">
+                <canvas id="themeChart"></canvas>
+            </div>
+        </section>
+
+        <section id="era-topics" class="analyze-section">
+            <h2>時代ごとの注目トピック</h2>
+            <table id="topicsTable" class="topics-table">
+                <thead>
+                    <tr>
+                        <th>年代</th>
+                        <th>流行したテーマ</th>
+                        <th>社会背景</th>
+                        <th>代表的なキーワード</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table content will be dynamically populated -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="era-story" class="analyze-section">
+            <h2>時代の物語</h2>
+            <div id="storyContent" class="story-content"></div>
+        </section>
+
+        <section id="keyword-timeline" class="analyze-section">
+            <h2>キーワードの変化</h2>
+            <div id="timelineContent" class="timeline-content"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Lyricism. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="analyze.js"></script>
+</body>
+</html>
